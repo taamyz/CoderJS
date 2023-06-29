@@ -18,5 +18,5 @@ else if (question >= 2011 ) {
     alert("Você é Alpha");
 }
 else {
-    alert("Digite apenas sua idade em números, exemplo: 2001")
+    alert("Digite sua idade apenas com números, exemplo: 2001")
 };
