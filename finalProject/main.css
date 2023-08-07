@@ -1,28 +1,81 @@
 @font-face {
-    font-family: "Basteleur-Bold";
-    src: url(../finalProject/font/Basteleur-Bold.ttf);
+    font-family: "SharpSans-Bold";
+    src: url(../finalProject/font/SharpSansDispNo1-Bold.ttf);
 }
 
 @font-face {
     font-family: "Basteleur-Moonlight";
-    src: url(../finalProject/font/Basteleur-Moonlight.ttf);
+    src: url(../finalProject/font/SharpSansDispNo1-Medium.ttf);
 }
 
 * {
-    padding: 0;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
     margin: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #101010;
+    overflow: hidden; 
+    transition: background-color 1s ease-in-out; 
 }
 
-body {
-    background-color: #FFFDE9;
+.logo-container {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; 
+    max-width: auto;
+    transition: transform 1s ease-in-out; 
+
 }
 
-select {
+#logo {
+    width: 650px; 
+    height: auto;
+    filter: invert(1);
+
+}
+
+
+.v-scroll {
+    display: flex;
+    position: absolute;
+    right: 80px;
+    justify-content: space-between;
+    width: 156px;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4000px;
+    display: flex;
+    will-change: transform;
+}
+
+.cover_ {
+    position: 
+    ;
+}
+
+
+/*select {
     font-family: "Basteleur-Moonlight", sans-serif;
     font-size: 16px;
     padding: 16px;
-    background-color: #FFFDE9;
+    background-color: #F1EDE1;
     background-position: center right;
     background-repeat: no-repeat;
     border: none;
@@ -55,7 +108,7 @@ button {
 
 
 .title, .site-name { 
-    font-family: "Basteleur-Bold", serif;
+    font-family: "SharpSans-Bold", serif;
     font-style: normal;
     font-size: 16px;
     line-height: 32px;
@@ -65,4 +118,4 @@ button {
     text-transform: uppercase;
     color: #1c1c1c;
 
-}
+}*/

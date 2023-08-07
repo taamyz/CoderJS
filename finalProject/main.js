@@ -15,6 +15,7 @@ function getCoffee() {
     const cafe4 = [(cafe1), " ---- ", (cafe2), " ---- ", (cafe3)]; 
 
 
+
     let resultCoffee;
         if (chooseCoffee === 'cafe1') {
             resultCoffee = (cafe1);
@@ -29,3 +30,4 @@ function getCoffee() {
   
     alert(JSON.stringify(resultCoffee));
   };
+
