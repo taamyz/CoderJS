@@ -1,14 +1,78 @@
-
 window.addEventListener('load', function() {
-    const logoContainer = document.querySelector('.logo-container');
+    const loaderContainer = document.querySelector('.loader-div');
 
     setTimeout(function() {
-        logoContainer.style.transform = 'translate(-40%, 0%)';
-        logoContainer.style.paddingLeft = '300px';
-        logoContainer.style.width = 'auto';
+        loaderContainer.style.opacity = '0';
+        loaderContainer.style.visibility = 'hidden';
 
-        document.body.style.backgroundColor = '#F1EDE1';
-        document.getElementById('logo').style.filter = 'invert(0)';
-        document.getElementById('logo').style.width = '350px';
-    }, 1500); 
+        setTimeout(function() {
+            loaderContainer.style.display = 'none';
+        }, 800);
+    }, 500);
+
+    const logoContainer = document.querySelector('#logo');
+    setTimeout(function() {
+        logoContainer.style.transform = 'scale(0.5) translateX(-180%) translateY(0%)';
+    }, 1500);
+
+    const vSlider = document.querySelector('.vslider');
+    const slider = document.querySelector('.slider');
+    let clonesHeight;
+    let vSliderHeight; 
+    const clones = [];
+    let scrollPos;
+
+    const items = [...document.querySelectorAll('.slider-item')];
+    const images = [...document.querySelectorAll('.cover')];
+
+    images.forEach((image, idx) => {
+        image.style.backgroundImage = `url(./images/${idx + 1}.png)`;
+    });
+
+    items.forEach(item => {
+        let clone = item.cloneNode(true);
+        clone.classList.add('clone');
+        slider.appendChild(clone);
+        clones.push(clone);
+    });
+
+    function getClonesHeight() {
+        let height = 0;
+        clones.forEach(clone => {
+            height += clone.offsetHeight;
+        });
+        return height;
+    };
+
+    function getScrollPos() {
+        return vSlider.scrollTop;
+    };
+    
+    function scrollUpdate() {
+        scrollPos = getScrollPos();
+    
+        if (clonesHeight + scrollPos >= sliderHeight) {
+            vSlider.scrollTo({ top: 1 });
+        } else if (scrollPos <= 0) {
+            vSlider.scrollTo({ top: sliderHeight - clonesHeight - 1 });
+        }
+    
+        slider.style.transform = `translateY(${-scrollPos}px)`;
+    };
+    
+    function calculateDimensions() {
+        vSliderHeight = vSlider.getBoundingClientRect().height;
+        sliderHeight = slider.getBoundingClientRect().height; 
+        clonesHeight = getClonesHeight();
+    }
+    
+    vSlider.addEventListener('scroll', scrollUpdate);
+    
+    function onLoad() {
+        calculateDimensions();
+        vSlider.scrollTo({ top: 1 });
+        scrollUpdate();
+    };
+    
+    onLoad();
 });

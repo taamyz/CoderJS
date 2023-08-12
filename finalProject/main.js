@@ -30,4 +30,3 @@ function getCoffee() {
   
     alert(JSON.stringify(resultCoffee));
   };
-
