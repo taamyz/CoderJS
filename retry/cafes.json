@@ -1,0 +1,185 @@
+{
+    "cafes": [
+      {
+        "id": "1",
+        "coffeeName": "CRIO",
+        "address": "Alameda Santos, 1470 - Loja 1478 - Jardim Paulista",
+        "area": "Paulista",
+        "mainProperty": "Expresso",
+        "propertyList": "Expresso, Coado, Cursos, Bebidas com leite, Atendimento, Custo benefício, Pão de Queijo",
+        "maps": "https://goo.gl/maps/rpb4PFZG23SxrVu3A",
+        "ig": "crio.cafe",
+        "igLink": "https://www.instagram.com/crio.cafe/",
+        "cover": "cover_crio"
+      },
+      {
+        "id": "2",
+        "coffeeName": "King of the Fork",
+        "address": "R. Artur de Azevedo, 1317 - Pinheiros",
+        "area": "Pinheiros",
+        "mainProperty": "Expresso",
+        "propertyList": "Expresso, Café com leite, Coado, Atendimento, Bicicletas",
+        "maps": "https://goo.gl/maps/3eJgBBtBd1EerqoTA",
+        "ig": "kingofthefork",
+        "igLink": "https://www.instagram.com/kingofthefork/",
+        "cover": "cover_kof"
+      },
+      {
+        "id": "3",
+        "coffeeName": "HM Food",
+        "address": "R. Teodoro Sampaio, 1027 - 1º andar - Pinheiros",
+        "area": "Pinheiros",
+        "mainProperty": "Comerbem",
+        "propertyList": "Bebidas com leite, Comidas, Sobremesas, Expresso, Coado, Atendimento, Roof Top",
+        "maps": "https://goo.gl/maps/cgC1roYPVwKN6NRL8",
+        "ig": "hmfoodcafe",
+        "igLink": "https://www.instagram.com/hmfoodcafe/",
+        "cover": "cover_hm"
+      },
+      {
+        "id": "4",
+        "coffeeName": "Soul Café",
+        "address": "R. Augusta, 1524 - Loja 6 - Consolação",
+        "area": "Paulista",
+        "mainProperty": "Expresso",
+        "propertyList": "Comidinhas, Coados, Sobremesas, Pão de Queijo",
+        "maps": "https://goo.gl/maps/mE7voHpuhsnwKceB6",
+        "ig": "soulcafesp",
+        "igLink": "https://www.instagram.com/soulcafesp/",
+        "cover": "cover_soul"
+      },
+      {
+        "id": "5",
+        "coffeeName": "Teto",
+        "address": "R. Simão Álvares, 986 - loja 01 - Vila Madalena",
+        "area": "Vila Madalena",
+        "mainProperty": "Coados",
+        "propertyList": "Comidinhas, Vegetariano, Pão de Queijo, Atendimento, Novidade",
+        "maps": "https://goo.gl/maps/yNdEL7ieCadW15H99",
+        "ig": "tetocafe",
+        "igLink": "https://www.instagram.com/tetocafe/",
+        "cover": "cover_teto"
+      },
+      {
+        "id": "6",
+        "coffeeName": "Coffe Lab",
+        "address": "R. Fradique Coutinho, 1340 - Vila Madalena",
+        "area": "Vila Madalena",
+        "mainProperty": "Expresso",
+        "propertyList": "Expresso, Café com leite, Coado, Workspace, Sobremesas, Comidinhas, Cursos, Experimentos",
+        "maps": "https://goo.gl/maps/hXfbXFUEUFs47Lus6",
+        "ig": "coffeelab_br",
+        "igLink": "https://www.instagram.com/coffeelab_br/",
+        "cover": "cover_lab"
+      },
+      {
+        "id": "7",
+        "coffeeName": "Cupping",
+        "address": "R. Wisard, 171 - Vila Madalena",
+        "area": "Vila Madalena",
+        "mainProperty": "Coados",
+        "propertyList": "Comidinhas, Sobremesas, Equipamentos, Expressos, Vegetariano",
+        "maps": "https://goo.gl/maps/gvkK5gGUMxEJ8eaQA",
+        "ig": "cuppingcafe",
+        "igLink": "https://www.instagram.com/cuppingcafe/",
+        "cover": "cover_cupping"
+      },
+      {
+        "id": "8",
+        "coffeeName": "Fora da Lei",
+        "address": "R. Cubatão, 131 - Vila Mariana",
+        "area": "Vila Mariana",
+        "mainProperty": "Expresso",
+        "propertyList": "Expresso, Café com leite, Comidinhas, Pão de Queijo, Sobremesas, Atendimento",
+        "maps": "https://goo.gl/maps/Zk3qnoQK2K8cRJ6A7",
+        "ig": "foradalei.cafe",
+        "igLink": "https://www.instagram.com/foradalei.cafe/",
+        "cover": "cover_fd"
+      },
+      {
+        "id": "9",
+        "coffeeName": "Takkø",
+        "address": "R. da Consolação, 3146 - Cerqueira César",
+        "area": "Paulista",
+        "mainProperty": "Coados",
+        "propertyList": "Coados, Comidinhas, Sobremesas, Equipamentos, Vegetariano, Expressos",
+        "maps": "https://goo.gl/maps/JJXqH87Q7toZMZR36",
+        "ig": "takko.cafe",
+        "igLink": "https://www.instagram.com/takko.cafe/",
+        "cover": "cover_takko"
+      },
+      {
+        "id": "10",
+        "coffeeName": "Clemente Café",
+        "address": "R. Dr. Diogo de Faria, 315",
+        "area": "Vila Mariana",
+        "mainProperty": "Expresso",
+        "propertyList": "Expresso, Comidinhas, Sobremesas, Atendimento, Café com leite, Coados, Bebidas com leite",
+        "maps": "https://goo.gl/maps/CKnibHukCQTV2esSA",
+        "ig": "clementecafe",
+        "igLink": "https://www.instagram.com/clementecafe.sp/",
+        "cover": "cover_clemente"
+      },
+      {
+        "id": "11",
+        "coffeeName": "Tem Umami",
+        "address": "Edifício Copan - Av. Ipiranga, 200 - Centro",
+        "area": "Centro",
+        "mainProperty": "Coados",
+        "propertyList": "Coados, Panetonne, Comidinhas, Cannellé, Sobremesas, Pizzas",
+        "maps": "https://goo.gl/maps/9sXHkU4j9fcC5fXE9",
+        "ig": "temumami",
+        "igLink": "https://www.instagram.com/temumami/",
+        "cover": "cover_tu"
+      },
+      {
+        "id": "12",
+        "coffeeName": "Botanikafe",
+        "address": "R. Padre Garcia Velho, 56",
+        "area": "Paulista",
+        "mainProperty": "Coados, Expressos, Brunch, Vegetariano, Comidinhas, Bebidas geladas",
+        "propertyList": "Coados, Panetonne, Comidinhas, Cannellé, Sobremesas, Pizzas",
+        "maps": "https://goo.gl/maps/kuvD2sDjtb671RDMA",
+        "ig": "botanikafe",
+        "igLink": "https://www.instagram.com/botanikafe/",
+        "cover": "cover_botanika"
+      },
+      {
+        "id": "13",
+        "coffeeName": "Catarina Coffee and Love",
+        "address": "R. Flávio de Melo, 109",
+        "area": "Vila Mariana",
+        "mainProperty": "Coados",
+        "propertyList": "Expresso, Café com leite, Coado, Sobremesas, Comidinhas, Experimentos, Atendimento",
+        "maps": "https://goo.gl/maps/3ACCwzJYBV6X3epB6",
+        "ig": "catarina.coffeeandlove",
+        "igLink": "https://www.instagram.com/catarina.coffeeandlove/",
+        "cover": "cover_catarina"
+      },
+      {
+        "id": "14",
+        "coffeeName": "Por um Punhado de Doláres",
+        "address": "R. Nestor Pestana, 115",
+        "area": "Centro",
+        "mainProperty": "Expresso",
+        "propertyList": "Coados, Expressos, Bebidas com Leite, Comidinhas, Sobremesas",
+        "maps": "https://goo.gl/maps/PaK3WrpHBbY3PRqSA",
+        "ig": "porumpunhadodedolares",
+        "igLink": "https://www.instagram.com/porumpunhadodedolares/",
+        "cover": "cover_ppd"
+      },
+      {
+        "id": "15",
+        "coffeeName": "ZUD Café",
+        "address": "R. Barão de Tatuí, 377",
+        "area": "Centro",
+        "mainProperty": "Comer bem",
+        "propertyList": "Coados, Expressos, Brunch, Pão de Queijo, Workspace, Comidinhas, Bebidas com leite, Vinil",
+        "maps": "https://goo.gl/maps/HNGsyfjQToJxMmjL8",
+        "ig": "zudcafe",
+        "igLink": "https://www.instagram.com/zudcafe/",
+        "cover": "cover_zud"
+      }
+    ]
+  }
+  

@@ -15,9 +15,13 @@ window.addEventListener('load', function() {
         logoContainer.style.transform = 'scale(0.5) translateX(-180%) translateY(0%)';
     }, 1500);
 
+    const filters = document.querySelector('.filters');
+    setTimeout(function() {
+        filters.style.opacity = '1';
+    }, 1500);
+
     const vSlider = document.querySelector('.vslider');
     const slider = document.querySelector('.slider');
-    let clonesHeight;
     let vSliderHeight; 
     const clones = [];
     let scrollPos;
@@ -28,14 +32,7 @@ window.addEventListener('load', function() {
     images.forEach((image, idx) => {
         image.style.backgroundImage = `url(./images/${idx + 1}.png)`;
     });
-
-    items.forEach(item => {
-        let clone = item.cloneNode(true);
-        clone.classList.add('clone');
-        slider.appendChild(clone);
-        clones.push(clone);
-    });
-
+    
     function getClonesHeight() {
         let height = 0;
         clones.forEach(clone => {
@@ -48,31 +45,61 @@ window.addEventListener('load', function() {
         return vSlider.scrollTop;
     };
     
-    function scrollUpdate() {
-        scrollPos = getScrollPos();
-    
-        if (clonesHeight + scrollPos >= sliderHeight) {
-            vSlider.scrollTo({ top: 1 });
-        } else if (scrollPos <= 0) {
-            vSlider.scrollTo({ top: sliderHeight - clonesHeight - 1 });
-        }
-    
-        slider.style.transform = `translateY(${-scrollPos}px)`;
-    };
-    
     function calculateDimensions() {
         vSliderHeight = vSlider.getBoundingClientRect().height;
         sliderHeight = slider.getBoundingClientRect().height; 
         clonesHeight = getClonesHeight();
-    }
+    };
     
-    vSlider.addEventListener('scroll', scrollUpdate);
+    /*vSlider.addEventListener('scroll', scrollUpdate);*/
     
     function onLoad() {
         calculateDimensions();
         vSlider.scrollTo({ top: 1 });
-        scrollUpdate();
+        /*scrollUpdate();*/
     };
     
     onLoad();
 });
+
+let cafes = [];
+let selectedCategories = new Set();
+
+// Fetch the JSON data
+fetch('..\finalProject\coffee.json')
+    .then(response => response.json())
+    .then(data => {
+        cafes = data;
+    });
+
+function initializePage() {
+    document.querySelectorAll('.filter').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const category = e.target.dataset.category;
+            
+            // Toggle category selection
+            if (selectedCategories.has(category)) {
+                selectedCategories.delete(category);
+                e.target.classList.remove('selected');
+            } else {
+                selectedCategories.add(category);
+                e.target.classList.add('selected');
+            }
+            
+            filterImages();
+        });
+    });
+
+    document.querySelectorAll('.vslider .cover').forEach(cover => {
+        cover.addEventListener('click', () => {
+            const cafe = cafes.find(cafe => cafe.id === parseInt(cover.dataset.id));
+            document.getElementById('cafe-name').textContent = cafe.name;
+            document.getElementById('cafe-info').textContent = cafe.info;
+            document.getElementById('cafe-modal').style.display = 'block';
+        });
+    });
+    
+    // Close modal function
+    function closeModal() {
+        document.getElementById('cafe-modal').style.display = 'none';
+    }};

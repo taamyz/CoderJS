@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: "SharpSans-Medium";
+    src: url(../finalProject/font/SharpSansDispNo1-Medium.ttf);
+}
+
+@font-face {
     font-family: "Basteleur-Moonlight";
     src: url(../finalProject/font/SharpSansDispNo1-Medium.ttf);
 }
@@ -54,6 +59,41 @@ body, html {
     width: 850px;
 }
 
+.filters{
+    opacity: 0;
+    transition: opacity 1s ease; 
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: auto;
+    z-index: 1001;
+    gap: 16px;
+}
+
+.filter{
+    background-color: transparent;
+    border: none;
+    font-family: "SharpSans-Medium", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 18px;
+    color: #101010;
+    cursor: pointer;
+}
+
+.active {
+    color: #F1EDE1;
+    background-color: #101010;
+}
+
+/*.button-value:hover{
+    color: #F1EDE1;
+    background-color: #101010;
+}*/
 
 .logo-container {
     display: flex;
